@@ -6,7 +6,7 @@ class DatabaseConnection:   # to build a context manager two dunder methods are 
         self.connection = None
         self.host = host
 
-    def __enter__(self):
+    def __enter__(self) -> sqlite3.Connection:
         self.connection = sqlite3.connect(self.host)
         return self.connection
 

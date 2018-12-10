@@ -1,4 +1,4 @@
-from sql.utils import database
+from type_hinting.utils import database
 
 USER_CHOICE = """
 Enter:
